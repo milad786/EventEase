@@ -85,9 +85,50 @@
   margin-top: 1rem;
 }
 
+<<<<<<< HEAD
 /* Edit Profile and Settings Buttons */
 .edit-profile-btn, .settings-btn {
   padding: 12px 18px; /* Match Calendar button padding */
+=======
+<<<<<<< HEAD
+.edit-profile-btn, .settings-btn {
+  padding: 10px 20px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  color: #333333;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.edit-profile-btn:hover, .settings-btn:hover {
+  background-color: #f1f5f9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.danger-btn {
+  padding: 10px 20px;
+  background-color: #fff5f5;
+  border: 1px solid #fee2e2;
+  border-radius: 8px;
+  color: #ef4444;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-left: auto;
+}
+
+.danger-btn:hover {
+  background-color: #fecaca;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(239, 68, 68, 0.1);
+=======
+/* Edit Profile and Settings Buttons */
+.edit-profile-btn, .settings-btn {
+  padding: 12px 18px; /* Consistent padding */
+>>>>>>> origin/main
   background: linear-gradient(120deg, var(--primary, #4caf50), var(--primary-dark, #388e3c)); /* Gradient background */
   color: white; /* White text */
   border: none; /* Remove borders */
@@ -121,6 +162,27 @@
   box-shadow: 0 8px 20px rgba(76, 175, 80, 0.3); /* Stronger shadow on hover */
 }
 
+<<<<<<< HEAD
+=======
+/* Danger Button */
+.danger-btn {
+  padding: 12px 18px; /* Consistent padding */
+  background: #ef4444; /* Red background for danger */
+  color: white; /* White text */
+  border: none; /* Remove borders */
+  border-radius: 9999px; /* Fully rounded corners */
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition, 0.3s ease-in-out); /* Smooth transitions */
+  box-shadow: var(--shadow, 0 4px 10px rgba(239, 68, 68, 0.2)); /* Subtle shadow */
+}
+
+.danger-btn:hover {
+  transform: scale(1.1); /* Slight scaling on hover */
+  box-shadow: 0 8px 20px rgba(76, 175, 80, 0.3); /* Stronger shadow on hover */
+}
+
+>>>>>>> origin/main
 /* Delete Button */
 .delete-btn {
   padding: 12px 18px; /* Consistent padding */
@@ -140,6 +202,7 @@
   box-shadow: 0 8px 20px rgba(239, 68, 68, 0.3); /* Stronger shadow on hover */
 }
 
+<<<<<<< HEAD
 /* Danger Button */
 .danger-btn {
   padding: 12px 18px; /* Match Calendar button padding */
@@ -157,11 +220,20 @@
   transform: scale(1.1); /* Slight scaling on hover */
   background: #dc2626; /* Darker red on hover */
   box-shadow: 0 8px 20px rgba(239, 68, 68, 0.3); /* Stronger shadow on hover */
+=======
+.delete-btn:disabled {
+  background: #fecaca; /* Light red for disabled state */
+  cursor: not-allowed;
+>>>>>>> origin/main
 }
 
 /* Save Button */
 .save-btn {
+<<<<<<< HEAD
   padding: 12px 18px; /* Match Calendar button padding */
+=======
+  padding: 12px 18px; /* Consistent padding */
+>>>>>>> origin/main
   background: linear-gradient(120deg, var(--primary, #4caf50), var(--primary-dark, #388e3c)); /* Gradient background */
   color: white; /* White text */
   border: none; /* Remove borders */
@@ -185,7 +257,11 @@
 
 /* Cancel Button */
 .cancel-btn {
+<<<<<<< HEAD
   padding: 12px 18px; /* Match Calendar button padding */
+=======
+  padding: 12px 18px; /* Consistent padding */
+>>>>>>> origin/main
   background: #f8fafc; /* Neutral background */
   color: #333333; /* Dark text */
   border: 1px solid #e2e8f0; /* Light border */
@@ -202,6 +278,34 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
+<<<<<<< HEAD
+=======
+/* Delete Confirmation Button */
+.delete-confirm-btn {
+  padding: 12px 18px; /* Consistent padding */
+  background: #ef4444; /* Red background for delete */
+  color: white; /* White text */
+  border: none; /* Remove borders */
+  border-radius: 9999px; /* Fully rounded corners */
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition, 0.3s ease-in-out); /* Smooth transitions */
+  box-shadow: var(--shadow, 0 4px 10px rgba(239, 68, 68, 0.2)); /* Subtle shadow */
+}
+
+.delete-confirm-btn:hover:not([disabled]) {
+  transform: scale(1.1); /* Slight scaling on hover */
+  background: #dc2626; /* Darker red on hover */
+  box-shadow: 0 8px 20px rgba(239, 68, 68, 0.3); /* Stronger shadow on hover */
+}
+
+.delete-confirm-btn:disabled {
+  background: #fecaca; /* Light red for disabled state */
+  cursor: not-allowed;
+>>>>>>> 0f95cbeb (Updated Design)
+}
+
+>>>>>>> origin/main
 /* Profile Edit Form */
 .profile-edit h2,
 .profile-settings h2,
@@ -287,6 +391,48 @@
   margin-top: 2rem;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+.save-btn {
+  padding: 10px 24px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.save-btn:hover:not([disabled]) {
+  background-color: #43a047;
+  transform: translateY(-2px);
+}
+
+.save-btn:disabled {
+  background-color: #c8e6c9;
+  cursor: not-allowed;
+}
+
+.cancel-btn {
+  padding: 10px 24px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  color: #333333;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cancel-btn:hover {
+  background-color: #f1f5f9;
+}
+
+=======
+>>>>>>> 0f95cbeb (Updated Design)
+>>>>>>> origin/main
 /* Settings */
 .settings-section {
   margin-bottom: 2rem;
@@ -413,6 +559,33 @@ input:checked + .toggle-slider:before {
   line-height: 1.5;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+.delete-confirm-btn {
+  padding: 10px 24px;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.delete-confirm-btn:hover:not([disabled]) {
+  background-color: #dc2626;
+  transform: translateY(-2px);
+}
+
+.delete-confirm-btn:disabled {
+  background-color: #fecaca;
+  cursor: not-allowed;
+}
+
+=======
+>>>>>>> 0f95cbeb (Updated Design)
+>>>>>>> origin/main
 /* Responsive styles */
 @media (max-width: 768px) {
   .profile-header {

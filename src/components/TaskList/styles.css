@@ -47,6 +47,29 @@
   box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.3); /* Green focus ring */
 }
 
+.category-filter button {
+  padding: 10px 20px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  color: #64748b;
+}
+
+.category-filter button:hover {
+  background-color: #f1f5f9;
+  border-color: #cbd5e1;
+}
+
+.category-filter button.active {
+  background-color: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+
+}
+
 .task-slider-container {
   display: flex;
   align-items: center;
@@ -55,6 +78,7 @@
 }
 
 .slider-button {
+
   background-color: #4caf50;
   color: white;
   border: none;
@@ -72,6 +96,7 @@
 
 .slider-button:disabled {
   background-color: #cccccc;
+
   cursor: not-allowed;
 }
 
@@ -177,11 +202,35 @@
   justify-content: center;
   transition: 0.3s ease-in-out;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.add-task-form button:hover {
+  background-color: #388e3c;
+
+  background: linear-gradient(120deg, var(--primary, #4caf50), var(--primary-dark, #388e3c)); /* Gradient background */
+  color: white;
+  border-radius: 9999px; /* Fully rounded corners */
+  padding: 12px 18px; /* Consistent padding */
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition, 0.3s ease-in-out);
+  box-shadow: var(--shadow, 0 4px 10px rgba(0, 0, 0, 0.2)); /* Subtle shadow */
+
 }
 
 .add-task-form button:hover {
   transform: scale(1.1); /* Slight scaling on hover */
   box-shadow: 0 8px 20px rgba(76, 175, 80, 0.3); /* Stronger shadow on hover */
+
 }
 
 @media (max-width: 768px) {
@@ -275,6 +324,7 @@
 }
 
 .save-btn {
+
   background-color: #4caf50;
   color: white;
 }
@@ -282,6 +332,7 @@
 .cancel-btn {
   background-color: #f44336;
   color: white;
+
 }
 
 .enter-task-form {
@@ -310,4 +361,33 @@
   outline: none;
   box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
   background-color: #ffffff;
+  background: linear-gradient(120deg, var(--primary, #4caf50), var(--primary-dark, #388e3c)); /* Gradient background */
+  color: white;
+  border-radius: 9999px; /* Fully rounded corners */
+  padding: 10px 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition, 0.3s ease-in-out);
+  box-shadow: var(--shadow, 0 4px 10px rgba(0, 0, 0, 0.2)); /* Subtle shadow */
+}
+
+.save-btn:hover {
+  transform: scale(1.1); /* Slight scaling on hover */
+  box-shadow: 0 8px 20px rgba(76, 175, 80, 0.3); /* Stronger shadow on hover */
+}
+
+.cancel-btn {
+  background: #f44336; /* Red background for cancel */
+  color: white;
+  border-radius: 9999px; /* Fully rounded corners */
+  padding: 10px 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition, 0.3s ease-in-out);
+  box-shadow: var(--shadow, 0 4px 10px rgba(0, 0, 0, 0.2)); /* Subtle shadow */
+}
+
+.cancel-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(244, 67, 54, 0.3);
 }
